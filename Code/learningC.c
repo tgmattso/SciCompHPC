@@ -56,7 +56,7 @@ double d = 7.8;  // a double is almost always a 64 bit value
 
 // Notice how every statement in C ends with a semicolon.  
 
-// it is bad form to put literal constants in your program. 
+// It is bad form to put literal constants in your program. 
 // C programmers therefore define these literals before using 
 // them.  Here is an example
 
@@ -140,7 +140,7 @@ printf(" my int is %d and my float is %f, and my double is %lf\n",
 //  You can do arithmetic in C
 
 newf = f + f; 
-printf(" my new f is %f \n",newf);
+printf(" f + f is %f \n",newf);
 
 // And there are other operators too such as *, -, ++, and more
 
@@ -155,10 +155,10 @@ printf("\n");
 // C lets us use conditional logic.  Consider the following
 
 if(whole == WholeValue)            // logical equivalence is two = signs
-{                                                  // other common logical operators include
+{                                  // other common logical operators include
    printf(" whole = %d \n",whole); // less than (<), greater than (>) and  
-}                                                   // less that or equal to (<=) and of course
-                                                    // greater than or equal to (>=)
+}                                  // less that or equal to (<=) and of course
+                                   // greater than or equal to (>=)
 
 // For a single statement inside the if statement, all those 
 // brackets are a bit cumbersome.  In C, a single line is 
