@@ -1,6 +1,6 @@
 #
 #  USAGE:
-#     make          ... to build the program
+#     make          ... to build the programs
 #     make test     ... to run the default test case
 #     make clean    ... remove object files and executables
 #
@@ -10,19 +10,19 @@ CC          = gcc-14
 CLINKER     = $(CC)
 LIBS        = -lm
 CFLAGS      = -fopenmp
-OPTFLAGS    = -std=c11 -fopenmp -O3 
+OPTFLAGS    = -std=c11 -fopenmp -O0 
 
 # All the executables supported by this makefile
-EXES=hello pi mandel mm_testbed jac_solv  pi_mc  linked hist 
+EXES = hello pi mandel mm_testbed jac_solv pi_mc linked hist 
 
 # Lists of object files needed to build executables listed above
-MM_OBJS  = mm_testbed.o mm_utils.o mm_ijk.o mm_tst_cases.o
+MM_OBJS  = mm_testbed.o mm_utils.o mm_tst_cases.o mm_ijk.o mm_opt.o 
 
-JAC_OBJS  = jac_solv.o mm_utils.o 
+JAC_OBJS = jac_solv.o mm_utils.o 
 
-PMC_OBJS  = pi_mc.o random.o
+PMC_OBJS = pi_mc.o random.o
 
-HIST_OBJS  = hist.o random.o
+HIST_OBJS = hist.o random.o
 
 all: $(EXES)
 
