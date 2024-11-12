@@ -6,7 +6,7 @@
 #
 
 #  define compiler, linker, and optimization flags plus library refs
-CC          = gcc-14
+CC          = gcc
 CLINKER     = $(CC)
 LIBS        = -lm
 CFLAGS      = -fopenmp
