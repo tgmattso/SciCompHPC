@@ -144,7 +144,7 @@ int main(int argc, char** argv) {
 <hr style="height:0.5em;border:none;color:#333;background-color:#0af;">
 <hr style="height:0.5em;border:none;color:#333;background-color:#0af;">
 
-# (danger zone)
+# (danger zone: NOT for students.  This documents how we set things up so we can replicate this setup in the future)
 ## Cluster configuration script for manager 
 ```bash
 #!/bin/bash
