@@ -1,4 +1,6 @@
 # SSH 101
+This text was provided by Pietro Grutta of the Uinversity of Padua.
+
 ## What's SSH?
 The Secure Shell (SSH) protocol is a method for securely sending commands to a computer over an unsecured network. SSH uses cryptography to authenticate and encrypt connections between devices. SSH also allows for tunneling, or port forwarding, which is when data packets are able to cross networks that they would not otherwise be able to cross. SSH is often used for controlling servers remotely, for managing infrastructure, and for transferring files. [1]
 
@@ -144,7 +146,19 @@ int main(int argc, char** argv) {
 <hr style="height:0.5em;border:none;color:#333;background-color:#0af;">
 <hr style="height:0.5em;border:none;color:#333;background-color:#0af;">
 
-# (danger zone: NOT for students.  This documents how we set things up so we can replicate this setup in the future)
+
+
+
+# References
+- [1] https://www.cloudflare.com/learning/access-management/what-is-ssh/
+- [2] https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys
+
+
+
+# Appendix:  
+
+This constitutes a danger zone. It is included here to document how we set up our cluster in the Open Stack Cloud Environment so we can replicate this setup in the future)
+
 ## Cluster configuration script for manager 
 ```bash
 #!/bin/bash
@@ -265,9 +279,3 @@ done
 echo "MPI cluster setup complete."
 ```
 
-
-
-
-# References
-- [1] https://www.cloudflare.com/learning/access-management/what-is-ssh/
-- [2] https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys
